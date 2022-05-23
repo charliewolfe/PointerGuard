@@ -15,9 +15,17 @@ When an external process tries to read our guarded pointer (e.g. using `ReadProc
 
 ## Example Output
 ```
-Real pointer: 0x00000067FBD9F834                                                                                        Fake pointer: 0x0000000001000001                                                                                        Guarded pointer 0x0000000001000001 accessed from 0x00007FF790B114E0                                                     Dereferenced real pointer (0x00000067FBD9F834): 50                                                                      Dereferenced fake pointer (0x0000000001000001): 50                                                                                                                                                                                              
-
-Writing to the fake pointer...                                                                                          Guarded pointer 0x0000000001000001 accessed from 0x00007FF790B11550                                                     Guarded pointer 0x0000000001000001 accessed from 0x00007FF790B11563                                                     Dereferenced real pointer (0x00000067FBD9F834): 60                                                                      Dereferenced fake pointer (0x0000000001000001): 60
+Real pointer: 0x00000067FBD9F834
+Fake pointer: 0x0000000001000001
+Guarded pointer 0x0000000001000001 accessed from 0x00007FF790B114E0
+Dereferenced real pointer (0x00000067FBD9F834): 50
+Dereferenced fake pointer (0x0000000001000001): 50 
+                                                                                                                                                   
+Writing to the fake pointer...
+Guarded pointer 0x0000000001000001 accessed from 0x00007FF790B11550
+Guarded pointer 0x0000000001000001 accessed from 0x00007FF790B11563
+Dereferenced real pointer (0x00000067FBD9F834): 60
+Dereferenced fake pointer (0x0000000001000001): 60
 ```
 
 ## Build
